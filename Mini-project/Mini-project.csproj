@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="book insertion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="book insertion.Designer.cs">
+      <DependentUpon>book insertion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Book.cs" />
     <Compile Include="dashboard.cs">
       <SubType>Form</SubType>
@@ -65,6 +71,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="book insertion.resx">
+      <DependentUpon>book insertion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

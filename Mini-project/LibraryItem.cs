@@ -12,7 +12,8 @@ namespace Mini_project
         public string Title { get; set; }
         public string Author { get; set; }
         public bool IsAvailable { get; set; } = true;
-        public bool IsBought { get; set; } = false; 
+        public bool IsBought { get; set; } = false;
+        public DateTime AddedDate { get; set; } = DateTime.Now;
         public string ImageUrl { get; set; } // URL or path to the image
         public string Description { get; set; }
         public decimal Price { get; set; } // Price of the item

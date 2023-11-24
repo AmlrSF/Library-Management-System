@@ -16,5 +16,12 @@ namespace Mini_project
         {
             InitializeComponent();
         }
+
+        private void addNewBToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            book_insertion book_Insertion = new book_insertion();
+            book_Insertion.Show();
+            this.Hide();
+        }
     }
 }
