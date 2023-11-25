@@ -112,12 +112,14 @@
             this.favoriteBooksToolStripMenuItem.Name = "favoriteBooksToolStripMenuItem";
             this.favoriteBooksToolStripMenuItem.Size = new System.Drawing.Size(119, 24);
             this.favoriteBooksToolStripMenuItem.Text = "Favorite Books";
+            this.favoriteBooksToolStripMenuItem.Click += new System.EventHandler(this.favoriteBooksToolStripMenuItem_Click);
             // 
             // paToolStripMenuItem
             // 
             this.paToolStripMenuItem.Name = "paToolStripMenuItem";
-            this.paToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
-            this.paToolStripMenuItem.Text = "Cart";
+            this.paToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
+            this.paToolStripMenuItem.Text = "Facture";
+            this.paToolStripMenuItem.Click += new System.EventHandler(this.paToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -136,7 +138,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "dashboard";
             this.Text = "dashboard";
-            //this.Load += new System.EventHandler(this.dashboard_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

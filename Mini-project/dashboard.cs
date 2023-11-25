@@ -46,6 +46,18 @@ namespace Mini_project
             
         }
 
-  
+        private void favoriteBooksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            favorites fav = new favorites();
+            fav.Show();
+            this.Hide();
+        }
+
+        private void paToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Facture fact = new Facture();
+            fact.Show();
+            this.Hide();
+        }
     }
 }

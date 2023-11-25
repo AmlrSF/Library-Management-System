@@ -45,6 +45,11 @@ namespace Mini_project
             item.IsFavorite = true;
         }
 
+        public void unMarkAsFavorite(LibraryItem item)
+        {
+            item.IsFavorite = false;
+        }
+
         // Remove an item from favorites
         public void RemoveFromFavorites(LibraryItem item)
         {
@@ -56,9 +61,22 @@ namespace Mini_project
         {
             if (item != null && item.IsAvailable && !item.IsBought)
             {
+                // Mark the item as not available and bought
                 item.IsAvailable = false;
                 item.IsBought = true;
             }
         }
+
+        public void DropItem(LibraryItem item)
+        {
+            if (item != null && !item.IsAvailable && item.IsBought)
+            {
+                // Mark the item as available and not bought
+                item.IsAvailable = true;
+                item.IsBought = false;
+            }
+        }
+
+
     }
 }

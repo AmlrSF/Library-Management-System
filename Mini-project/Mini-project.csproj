@@ -71,6 +71,18 @@
     <Compile Include="document list.Designer.cs">
       <DependentUpon>document list.cs</DependentUpon>
     </Compile>
+    <Compile Include="Facture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facture.Designer.cs">
+      <DependentUpon>Facture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="favorites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="favorites.Designer.cs">
+      <DependentUpon>favorites.cs</DependentUpon>
+    </Compile>
     <Compile Include="Library.cs" />
     <Compile Include="LibraryItem.cs" />
     <Compile Include="LibraryManagementSystem.cs" />
@@ -100,6 +112,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="document list.resx">
       <DependentUpon>document list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facture.resx">
+      <DependentUpon>Facture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="favorites.resx">
+      <DependentUpon>favorites.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="magazaine insertion.resx">
       <DependentUpon>magazaine insertion.cs</DependentUpon>

@@ -53,6 +53,17 @@ namespace Mini_project
             }
         }
 
+        public void unMarkItemAsFavorite(string title)
+        {
+            LibraryItem item = library.SearchItemByTitle(title);
+            if (item != null)
+            {
+                library.unMarkAsFavorite(item);
+            }
+        }
+
+
+
         // Remove an item from favorites
         public void RemoveItemFromFavorites(string title)
         {
@@ -72,5 +83,15 @@ namespace Mini_project
                 library.BuyItem(item);
             }
         }
+
+        public void DropItem(string title)
+        {
+            LibraryItem item = library.SearchItemByTitle(title);
+            if (item != null)
+            {
+                library.DropItem(item);
+            }
+        }
+        
     }
 }
