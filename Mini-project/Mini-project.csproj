@@ -53,6 +53,12 @@
       <DependentUpon>book insertion.cs</DependentUpon>
     </Compile>
     <Compile Include="Book.cs" />
+    <Compile Include="bookshelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookshelf.Designer.cs">
+      <DependentUpon>bookshelf.cs</DependentUpon>
+    </Compile>
     <Compile Include="dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="book insertion.resx">
       <DependentUpon>book insertion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookshelf.resx">
+      <DependentUpon>bookshelf.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>

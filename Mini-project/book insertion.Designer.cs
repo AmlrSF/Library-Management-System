@@ -213,8 +213,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(227, 41);
             this.button1.TabIndex = 17;
-            this.button1.Text = "Search for book";
+            this.button1.Text = "dashboard";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -252,7 +253,6 @@
             this.Controls.Add(this.label1);
             this.Name = "book_insertion";
             this.Text = "book_insertion";
-            //this.Load += new System.EventHandler(this.book_insertion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bookImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -31,13 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dashboard));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dashboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bookshelfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.documentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewMagazineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewDocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.studentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addNewStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewStudentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.favoriteBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,8 +47,8 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dashboardToolStripMenuItem,
+            this.bookshelfToolStripMenuItem,
             this.documentsToolStripMenuItem,
-            this.studentsToolStripMenuItem,
             this.favoriteBooksToolStripMenuItem,
             this.paToolStripMenuItem,
             this.exitToolStripMenuItem});
@@ -67,6 +65,13 @@
             this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
             this.dashboardToolStripMenuItem.Text = "Dashboard";
             // 
+            // bookshelfToolStripMenuItem
+            // 
+            this.bookshelfToolStripMenuItem.Name = "bookshelfToolStripMenuItem";
+            this.bookshelfToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.bookshelfToolStripMenuItem.Text = "bookshelf";
+            this.bookshelfToolStripMenuItem.Click += new System.EventHandler(this.bookshelfToolStripMenuItem_Click);
+            // 
             // documentsToolStripMenuItem
             // 
             this.documentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -82,7 +87,7 @@
             // 
             this.addNewBToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addNewBToolStripMenuItem.Name = "addNewBToolStripMenuItem";
-            this.addNewBToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addNewBToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
             this.addNewBToolStripMenuItem.Text = "Add New Book";
             this.addNewBToolStripMenuItem.Click += new System.EventHandler(this.addNewBToolStripMenuItem_Click);
             // 
@@ -90,7 +95,7 @@
             // 
             this.addNewMagazineToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addNewMagazineToolStripMenuItem.Name = "addNewMagazineToolStripMenuItem";
-            this.addNewMagazineToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addNewMagazineToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
             this.addNewMagazineToolStripMenuItem.Text = "Add New Magazine";
             this.addNewMagazineToolStripMenuItem.Click += new System.EventHandler(this.addNewMagazineToolStripMenuItem_Click);
             // 
@@ -98,30 +103,9 @@
             // 
             this.viewDocumentsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.viewDocumentsToolStripMenuItem.Name = "viewDocumentsToolStripMenuItem";
-            this.viewDocumentsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.viewDocumentsToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
             this.viewDocumentsToolStripMenuItem.Text = "View documents";
             this.viewDocumentsToolStripMenuItem.Click += new System.EventHandler(this.viewDocumentsToolStripMenuItem_Click);
-            // 
-            // studentsToolStripMenuItem
-            // 
-            this.studentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addNewStudentToolStripMenuItem,
-            this.viewStudentsToolStripMenuItem});
-            this.studentsToolStripMenuItem.Name = "studentsToolStripMenuItem";
-            this.studentsToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
-            this.studentsToolStripMenuItem.Text = "Students";
-            // 
-            // addNewStudentToolStripMenuItem
-            // 
-            this.addNewStudentToolStripMenuItem.Name = "addNewStudentToolStripMenuItem";
-            this.addNewStudentToolStripMenuItem.Size = new System.Drawing.Size(209, 26);
-            this.addNewStudentToolStripMenuItem.Text = "Add New Student";
-            // 
-            // viewStudentsToolStripMenuItem
-            // 
-            this.viewStudentsToolStripMenuItem.Name = "viewStudentsToolStripMenuItem";
-            this.viewStudentsToolStripMenuItem.Size = new System.Drawing.Size(209, 26);
-            this.viewStudentsToolStripMenuItem.Text = "View Students";
             // 
             // favoriteBooksToolStripMenuItem
             // 
@@ -152,6 +136,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "dashboard";
             this.Text = "dashboard";
+            //this.Load += new System.EventHandler(this.dashboard_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -167,11 +152,9 @@
         private System.Windows.Forms.ToolStripMenuItem addNewBToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewMagazineToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewDocumentsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem studentsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addNewStudentToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewStudentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem paToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem favoriteBooksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bookshelfToolStripMenuItem;
     }
 }

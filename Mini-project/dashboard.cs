@@ -37,5 +37,15 @@ namespace Mini_project
             magazine_insertion.Show();
             this.Hide();    
         }
+
+        private void bookshelfToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bookshelf bk = new bookshelf();
+            bk.Show();
+            this.Hide();
+            
+        }
+
+  
     }
 }

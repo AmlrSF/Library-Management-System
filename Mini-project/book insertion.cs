@@ -108,5 +108,11 @@ namespace Mini_project
             this.Hide();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dashboard dashboard = new dashboard();
+            dashboard.Show();
+            this.Hide();
+        }
     }
 }

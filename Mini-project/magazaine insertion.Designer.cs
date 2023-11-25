@@ -45,6 +45,7 @@
             this.magazineTitle = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.magazineIsueeN = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.MagazineImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -190,11 +191,22 @@
             this.magazineIsueeN.Size = new System.Drawing.Size(206, 22);
             this.magazineIsueeN.TabIndex = 38;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(320, 416);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(227, 41);
+            this.button1.TabIndex = 39;
+            this.button1.Text = "Dashboard";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // magazaine_insertion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(603, 491);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.magazineIsueeN);
             this.Controls.Add(this.ListMagazineBtn);
             this.Controls.Add(this.magazineAddBtn);
@@ -237,5 +249,6 @@
         private System.Windows.Forms.TextBox magazineTitle;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox magazineIsueeN;
+        private System.Windows.Forms.Button button1;
     }
 }
