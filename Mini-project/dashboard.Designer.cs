@@ -92,6 +92,7 @@
             this.addNewMagazineToolStripMenuItem.Name = "addNewMagazineToolStripMenuItem";
             this.addNewMagazineToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.addNewMagazineToolStripMenuItem.Text = "Add New Magazine";
+            this.addNewMagazineToolStripMenuItem.Click += new System.EventHandler(this.addNewMagazineToolStripMenuItem_Click);
             // 
             // viewDocumentsToolStripMenuItem
             // 
@@ -99,6 +100,7 @@
             this.viewDocumentsToolStripMenuItem.Name = "viewDocumentsToolStripMenuItem";
             this.viewDocumentsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.viewDocumentsToolStripMenuItem.Text = "View documents";
+            this.viewDocumentsToolStripMenuItem.Click += new System.EventHandler(this.viewDocumentsToolStripMenuItem_Click);
             // 
             // studentsToolStripMenuItem
             // 
@@ -147,7 +149,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(867, 452);
             this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "dashboard";
             this.Text = "dashboard";

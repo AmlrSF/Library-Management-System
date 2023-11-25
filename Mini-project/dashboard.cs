@@ -23,5 +23,19 @@ namespace Mini_project
             book_Insertion.Show();
             this.Hide();
         }
+
+        private void viewDocumentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            document_list docsL = new document_list();
+            docsL.Show();
+            this.Hide();
+        }
+
+        private void addNewMagazineToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            magazaine_insertion magazine_insertion = new magazaine_insertion();
+            magazine_insertion.Show();
+            this.Hide();    
+        }
     }
 }

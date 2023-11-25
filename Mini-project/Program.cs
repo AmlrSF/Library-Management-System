@@ -8,15 +8,14 @@ namespace Mini_project
 {
     internal static class Program
     {
-        /// <summary>
-        /// Point d'entrée principal de l'application.
-        /// </summary>
+        internal static LibraryManagementSystem libray { get; } = new LibraryManagementSystem();
+
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new splach());
+            Application.Run(new dashboard());
         }
     }
 }

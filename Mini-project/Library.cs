@@ -22,6 +22,11 @@ namespace Mini_project
             items.Remove(item);
         }
 
+        public void RemoveAll()
+        {
+            items.Clear();
+        }
+
         // Get all library items in the library
         public List<LibraryItem> GetAllItems()
         {

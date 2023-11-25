@@ -33,5 +33,80 @@ namespace Mini_project
                 }
             }
         }
+
+        private void BookAddBtn_Click(object sender, EventArgs e)
+        {
+            
+            string author = bookAuthor.Text;
+            string title = bookTitle.Text;
+            string description = bookDescription.Text;
+
+            
+            if (decimal.TryParse(bookPrice.Text, out decimal price))
+            {
+                
+                string genre = BookGenre.Text;
+                string maisonEd = bookmed.Text;
+
+
+                if (int.TryParse(bookpage.Text, out int nbPages))
+                {
+                    string image = bookImage.ImageLocation;
+
+                    
+                    Book newBook = new Book
+                    {
+                        Author = author,
+                        Title = title,
+                        Description = description,
+                        Price = price,
+                        Genre = genre,
+                        MaisonEdition = maisonEd,
+                        NbPages = nbPages,
+                        ImageUrl = image
+                    };
+
+                    
+                    Program.libray.AddBookToLibrary(newBook);
+
+                    
+                    MessageBox.Show("Book added successfully!");
+
+                    
+                    ClearFormControls();
+                }
+                else
+                {                  
+                    MessageBox.Show("Invalid number of pages. Please enter a valid integer.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid price. Please enter a valid decimal number.");
+            }
+        }
+
+
+        private void ClearFormControls()
+        {
+            bookAuthor.Text = string.Empty;
+            bookTitle.Text = string.Empty;
+            bookDescription.Text = string.Empty;
+            bookPrice.Text = string.Empty;
+            BookGenre.Text = string.Empty;
+            bookmed.Text = string.Empty;
+            bookNbPage.Text = string.Empty;
+
+            bookImage.ImageLocation = @"C:\Users\elbootic.com\Desktop\Liberay Management System\download(2).png";
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            document_list dcsL = new document_list();
+            dcsL.Show();
+            this.Hide();
+        }
+
     }
 }

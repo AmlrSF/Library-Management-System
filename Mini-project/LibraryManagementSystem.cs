@@ -11,35 +11,14 @@ namespace Mini_project
         private Library library = new Library();
 
         // Add a book to the library
-        public void AddBookToLibrary(string title, string author, string genre, int nbPages, string maisonEdition, string imageUrl, string description, decimal price)
+        public void AddBookToLibrary(Book book)
         {
-            Book book = new Book
-            {
-                Title = title,
-                Author = author,
-                Genre = genre,
-                NbPages = nbPages,
-                MaisonEdition = maisonEdition,
-                ImageUrl = imageUrl,
-                Description = description,
-                Price = price
-            };
             library.AddItem(book);
         }
 
         // Add a magazine to the library
-        public void AddMagazineToLibrary(string title, string author, int issueNumber, string maisonEdition, string imageUrl, string description, decimal price)
+        public void AddMagazineToLibrary(Magazine magazine)
         {
-            Magazine magazine = new Magazine
-            {
-                Title = title,
-                Author = author,
-                IssueNumber = issueNumber,
-                MaisonEdition = maisonEdition,
-                ImageUrl = imageUrl,
-                Description = description,
-                Price = price
-            };
             library.AddItem(magazine);
         }
 
@@ -51,6 +30,11 @@ namespace Mini_project
             {
                 library.RemoveItem(itemToRemove);
             }
+        }
+
+        public void RemoveAllItemsFromLibrary()
+        {
+            library.RemoveAll();
         }
 
         // Get all library items in the library

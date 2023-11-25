@@ -34,18 +34,20 @@
             this.bookAuthor = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.bookDescription = new System.Windows.Forms.RichTextBox();
             this.bookPrice = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.BookGenre = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.bookpage = new System.Windows.Forms.TextBox();
             this.bookNbPage = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.bookmed = new System.Windows.Forms.TextBox();
             this.bookMEditino = new System.Windows.Forms.Label();
             this.bookImage = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.BookAddBtn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bookImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,13 +94,13 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Description";
             // 
-            // richTextBox1
+            // bookDescription
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(50, 177);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(203, 96);
-            this.richTextBox1.TabIndex = 5;
-            this.richTextBox1.Text = "";
+            this.bookDescription.Location = new System.Drawing.Point(50, 177);
+            this.bookDescription.Name = "bookDescription";
+            this.bookDescription.Size = new System.Drawing.Size(203, 96);
+            this.bookDescription.TabIndex = 5;
+            this.bookDescription.Text = "";
             // 
             // bookPrice
             // 
@@ -140,12 +142,12 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Genre";
             // 
-            // textBox1
+            // bookpage
             // 
-            this.textBox1.Location = new System.Drawing.Point(50, 426);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(206, 22);
-            this.textBox1.TabIndex = 11;
+            this.bookpage.Location = new System.Drawing.Point(50, 426);
+            this.bookpage.Name = "bookpage";
+            this.bookpage.Size = new System.Drawing.Size(206, 22);
+            this.bookpage.TabIndex = 11;
             // 
             // bookNbPage
             // 
@@ -157,12 +159,12 @@
             this.bookNbPage.Text = "Nombre de pages";
             this.bookNbPage.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox2
+            // bookmed
             // 
-            this.textBox2.Location = new System.Drawing.Point(53, 485);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(206, 22);
-            this.textBox2.TabIndex = 13;
+            this.bookmed.Location = new System.Drawing.Point(53, 485);
+            this.bookmed.Name = "bookmed";
+            this.bookmed.Size = new System.Drawing.Size(206, 22);
+            this.bookmed.TabIndex = 13;
             // 
             // bookMEditino
             // 
@@ -201,26 +203,48 @@
             this.BookAddBtn.Name = "BookAddBtn";
             this.BookAddBtn.Size = new System.Drawing.Size(227, 41);
             this.BookAddBtn.TabIndex = 16;
-            this.BookAddBtn.Text = "Add product";
+            this.BookAddBtn.Text = "Add Book";
             this.BookAddBtn.UseVisualStyleBackColor = true;
+            this.BookAddBtn.Click += new System.EventHandler(this.BookAddBtn_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(308, 407);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(227, 41);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Search for book";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(308, 358);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(227, 41);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "List of books";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // book_insertion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(583, 555);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BookAddBtn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.bookImage);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.bookmed);
             this.Controls.Add(this.bookMEditino);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.bookpage);
             this.Controls.Add(this.bookNbPage);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.BookGenre);
             this.Controls.Add(this.bookPrice);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.bookDescription);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.bookAuthor);
             this.Controls.Add(this.label2);
@@ -228,6 +252,7 @@
             this.Controls.Add(this.label1);
             this.Name = "book_insertion";
             this.Text = "book_insertion";
+            //this.Load += new System.EventHandler(this.book_insertion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bookImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -241,17 +266,19 @@
         private System.Windows.Forms.TextBox bookAuthor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox bookDescription;
         private System.Windows.Forms.TextBox bookPrice;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox BookGenre;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox bookpage;
         private System.Windows.Forms.Label bookNbPage;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox bookmed;
         private System.Windows.Forms.Label bookMEditino;
         private System.Windows.Forms.PictureBox bookImage;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button BookAddBtn;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
