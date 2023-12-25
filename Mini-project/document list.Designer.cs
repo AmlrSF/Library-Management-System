@@ -34,7 +34,6 @@
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dashboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -70,6 +69,7 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.deleteAllBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -96,38 +96,33 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dashboardToolStripMenuItem,
-            this.infoToolStripMenuItem});
+            this.dashboardToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1017, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(10);
+            this.menuStrip1.Size = new System.Drawing.Size(1017, 47);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // dashboardToolStripMenuItem
             // 
-            this.dashboardToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("dashboardToolStripMenuItem.Image")));
+            this.dashboardToolStripMenuItem.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboardToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
-            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
+            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(73, 27);
             this.dashboardToolStripMenuItem.Text = "Back";
             this.dashboardToolStripMenuItem.Click += new System.EventHandler(this.dashboardToolStripMenuItem_Click);
-            // 
-            // infoToolStripMenuItem
-            // 
-            this.infoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("infoToolStripMenuItem.Image")));
-            this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
-            this.infoToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
-            this.infoToolStripMenuItem.Text = "Info";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 28);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(257, 32);
+            this.label2.Size = new System.Drawing.Size(305, 39);
             this.label2.TabIndex = 4;
             this.label2.Text = "List of Documents";
             // 
@@ -135,10 +130,10 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(0, 81);
+            this.tabControl1.Location = new System.Drawing.Point(0, 135);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1017, 534);
+            this.tabControl1.Size = new System.Drawing.Size(1017, 480);
             this.tabControl1.TabIndex = 5;
             // 
             // tabPage1
@@ -150,33 +145,39 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1009, 505);
+            this.tabPage1.Size = new System.Drawing.Size(1009, 451);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Books";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // btnAddNewBook
             // 
+            this.btnAddNewBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
             this.btnAddNewBook.Cursor = System.Windows.Forms.Cursors.SizeNS;
+            this.btnAddNewBook.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddNewBook.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnAddNewBook.Location = new System.Drawing.Point(767, 37);
             this.btnAddNewBook.Name = "btnAddNewBook";
             this.btnAddNewBook.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnAddNewBook.Size = new System.Drawing.Size(114, 48);
             this.btnAddNewBook.TabIndex = 10;
             this.btnAddNewBook.Text = "Add new";
-            this.btnAddNewBook.UseVisualStyleBackColor = true;
+            this.btnAddNewBook.UseVisualStyleBackColor = false;
             this.btnAddNewBook.Click += new System.EventHandler(this.btnAddNewBook_Click);
             // 
             // deleteBookBtn
             // 
+            this.deleteBookBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
             this.deleteBookBtn.Cursor = System.Windows.Forms.Cursors.SizeNS;
+            this.deleteBookBtn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteBookBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.deleteBookBtn.Location = new System.Drawing.Point(887, 37);
             this.deleteBookBtn.Name = "deleteBookBtn";
             this.deleteBookBtn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.deleteBookBtn.Size = new System.Drawing.Size(114, 48);
             this.deleteBookBtn.TabIndex = 8;
             this.deleteBookBtn.Text = "Delete";
-            this.deleteBookBtn.UseVisualStyleBackColor = true;
+            this.deleteBookBtn.UseVisualStyleBackColor = false;
             this.deleteBookBtn.Click += new System.EventHandler(this.deleteBookBtn_Click);
             // 
             // bindingNavigator1
@@ -220,7 +221,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 28);
             this.bindingNavigatorCountItem.Text = "de {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Nombre total d\'éléments";
             // 
@@ -230,7 +231,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorDeleteItem.Text = "Supprimer";
             // 
             // bindingNavigatorMoveFirstItem
@@ -239,7 +240,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Placer en premier";
             // 
             // bindingNavigatorMovePreviousItem
@@ -248,13 +249,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Déplacer vers le haut";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -269,7 +270,7 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -277,7 +278,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem.Text = "Déplacer vers le bas";
             // 
             // bindingNavigatorMoveLastItem
@@ -286,13 +287,13 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem.Text = "Placer en dernier";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // tabPage2
             // 
@@ -303,7 +304,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1009, 505);
+            this.tabPage2.Size = new System.Drawing.Size(1009, 478);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Magazine";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -459,20 +460,34 @@
             // 
             // deleteAllBtn
             // 
+            this.deleteAllBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
             this.deleteAllBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteAllBtn.Location = new System.Drawing.Point(868, 34);
+            this.deleteAllBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.deleteAllBtn.Location = new System.Drawing.Point(801, 61);
             this.deleteAllBtn.Name = "deleteAllBtn";
-            this.deleteAllBtn.Size = new System.Drawing.Size(142, 41);
+            this.deleteAllBtn.Size = new System.Drawing.Size(204, 53);
             this.deleteAllBtn.TabIndex = 6;
             this.deleteAllBtn.Text = "Delete All";
-            this.deleteAllBtn.UseVisualStyleBackColor = true;
+            this.deleteAllBtn.UseVisualStyleBackColor = false;
             this.deleteAllBtn.Click += new System.EventHandler(this.deleteAllBtn_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(19, 104);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(374, 15);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Admins add, delete items. Users browse, buy effortlessly.";
             // 
             // document_list
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1017, 613);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.deleteAllBtn);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label2);
@@ -545,6 +560,6 @@
         private System.Windows.Forms.Button deleteAllBtn;
         private System.Windows.Forms.Button btnAddNewBook;
         private System.Windows.Forms.Button addNewMagBtn;
-        private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
     }
 }
