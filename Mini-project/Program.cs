@@ -15,7 +15,7 @@ namespace Mini_project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new dashboard());
+            Application.Run(new splach());
         }
     }
 }
