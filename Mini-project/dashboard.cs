@@ -59,5 +59,12 @@ namespace Mini_project
             fact.Show();
             this.Hide();
         }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
     }
 }
