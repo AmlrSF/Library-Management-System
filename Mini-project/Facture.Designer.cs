@@ -59,7 +59,7 @@
             this.backToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(11, 11, 11, 11);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(11);
             this.menuStrip1.Size = new System.Drawing.Size(811, 49);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
@@ -78,14 +78,14 @@
             // 
             this.flowPanelFacture.Location = new System.Drawing.Point(19, 151);
             this.flowPanelFacture.Name = "flowPanelFacture";
-            this.flowPanelFacture.Size = new System.Drawing.Size(488, 342);
+            this.flowPanelFacture.Size = new System.Drawing.Size(458, 342);
             this.flowPanelFacture.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(525, 153);
+            this.label2.Location = new System.Drawing.Point(497, 157);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 27);
             this.label2.TabIndex = 7;
@@ -95,7 +95,7 @@
             // 
             this.Total.AutoSize = true;
             this.Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total.Location = new System.Drawing.Point(658, 153);
+            this.Total.Location = new System.Drawing.Point(630, 157);
             this.Total.Name = "Total";
             this.Total.Size = new System.Drawing.Size(31, 32);
             this.Total.TabIndex = 8;
@@ -105,7 +105,7 @@
             // 
             this.Amount.AutoSize = true;
             this.Amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Amount.Location = new System.Drawing.Point(658, 189);
+            this.Amount.Location = new System.Drawing.Point(630, 193);
             this.Amount.Name = "Amount";
             this.Amount.Size = new System.Drawing.Size(31, 32);
             this.Amount.TabIndex = 10;
@@ -115,7 +115,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(525, 189);
+            this.label4.Location = new System.Drawing.Point(497, 193);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 27);
             this.label4.TabIndex = 9;
@@ -126,7 +126,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(531, 228);
+            this.button1.Location = new System.Drawing.Point(502, 228);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(267, 54);
             this.button1.TabIndex = 11;
