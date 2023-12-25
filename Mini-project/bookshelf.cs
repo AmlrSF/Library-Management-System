@@ -559,7 +559,7 @@ namespace Mini_project
 
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dashboard dash = new dashboard();
+            UserUi dash = new UserUi();
             dash.Show();
             this.Hide();
         }

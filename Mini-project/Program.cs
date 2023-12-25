@@ -9,7 +9,7 @@ namespace Mini_project
     internal static class Program
     {
         internal static LibraryManagementSystem libray { get; } = new LibraryManagementSystem();
-
+        public static String Username;
         [STAThread]
         static void Main()
         {

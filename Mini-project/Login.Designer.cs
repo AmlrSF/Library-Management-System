@@ -34,7 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Username = new System.Windows.Forms.Label();
             this.Password = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Pass = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -83,14 +83,14 @@
             this.Password.TabIndex = 5;
             this.Password.Text = "Password";
             // 
-            // textBox2
+            // Pass
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(36, 292);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(294, 30);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.Pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pass.Location = new System.Drawing.Point(36, 292);
+            this.Pass.Name = "Pass";
+            this.Pass.Size = new System.Drawing.Size(294, 30);
+            this.Pass.TabIndex = 4;
+            this.Pass.UseSystemPasswordChar = true;
             // 
             // pictureBox2
             // 
@@ -142,7 +142,7 @@
             // 
             // user
             // 
-            this.user.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.user.Location = new System.Drawing.Point(36, 200);
             this.user.Name = "user";
             this.user.Size = new System.Drawing.Size(294, 30);
@@ -160,7 +160,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.Password);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Pass);
             this.Controls.Add(this.Username);
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -179,7 +179,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Username;
         private System.Windows.Forms.Label Password;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Pass;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnLogin;

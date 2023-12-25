@@ -24,7 +24,7 @@ namespace Mini_project
 
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dashboard dah = new dashboard();
+            UserUi dah = new UserUi();
             dah.Show();
             this.Hide();
         }

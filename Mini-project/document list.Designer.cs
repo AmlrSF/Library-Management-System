@@ -34,9 +34,11 @@
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dashboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnAddNewBook = new System.Windows.Forms.Button();
             this.deleteBookBtn = new System.Windows.Forms.Button();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
@@ -51,6 +53,7 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.addNewMagBtn = new System.Windows.Forms.Button();
             this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem1 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem1 = new System.Windows.Forms.ToolStripLabel();
@@ -67,9 +70,6 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.deleteAllBtn = new System.Windows.Forms.Button();
-            this.btnAddNewBook = new System.Windows.Forms.Button();
-            this.addNewMagBtn = new System.Windows.Forms.Button();
-            this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -114,6 +114,13 @@
             this.dashboardToolStripMenuItem.Text = "Back";
             this.dashboardToolStripMenuItem.Click += new System.EventHandler(this.dashboardToolStripMenuItem_Click);
             // 
+            // infoToolStripMenuItem
+            // 
+            this.infoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("infoToolStripMenuItem.Image")));
+            this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
+            this.infoToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
+            this.infoToolStripMenuItem.Text = "Info";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -147,6 +154,18 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Books";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // btnAddNewBook
+            // 
+            this.btnAddNewBook.Cursor = System.Windows.Forms.Cursors.SizeNS;
+            this.btnAddNewBook.Location = new System.Drawing.Point(767, 37);
+            this.btnAddNewBook.Name = "btnAddNewBook";
+            this.btnAddNewBook.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnAddNewBook.Size = new System.Drawing.Size(114, 48);
+            this.btnAddNewBook.TabIndex = 10;
+            this.btnAddNewBook.Text = "Add new";
+            this.btnAddNewBook.UseVisualStyleBackColor = true;
+            this.btnAddNewBook.Click += new System.EventHandler(this.btnAddNewBook_Click);
             // 
             // deleteBookBtn
             // 
@@ -288,6 +307,18 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Magazine";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // addNewMagBtn
+            // 
+            this.addNewMagBtn.Cursor = System.Windows.Forms.Cursors.SizeNS;
+            this.addNewMagBtn.Location = new System.Drawing.Point(767, 37);
+            this.addNewMagBtn.Name = "addNewMagBtn";
+            this.addNewMagBtn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.addNewMagBtn.Size = new System.Drawing.Size(114, 48);
+            this.addNewMagBtn.TabIndex = 11;
+            this.addNewMagBtn.Text = "Add new";
+            this.addNewMagBtn.UseVisualStyleBackColor = true;
+            this.addNewMagBtn.Click += new System.EventHandler(this.addNewMagBtn_Click);
             // 
             // bindingNavigator2
             // 
@@ -437,37 +468,6 @@
             this.deleteAllBtn.UseVisualStyleBackColor = true;
             this.deleteAllBtn.Click += new System.EventHandler(this.deleteAllBtn_Click);
             // 
-            // btnAddNewBook
-            // 
-            this.btnAddNewBook.Cursor = System.Windows.Forms.Cursors.SizeNS;
-            this.btnAddNewBook.Location = new System.Drawing.Point(767, 37);
-            this.btnAddNewBook.Name = "btnAddNewBook";
-            this.btnAddNewBook.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnAddNewBook.Size = new System.Drawing.Size(114, 48);
-            this.btnAddNewBook.TabIndex = 10;
-            this.btnAddNewBook.Text = "Add new";
-            this.btnAddNewBook.UseVisualStyleBackColor = true;
-            this.btnAddNewBook.Click += new System.EventHandler(this.btnAddNewBook_Click);
-            // 
-            // addNewMagBtn
-            // 
-            this.addNewMagBtn.Cursor = System.Windows.Forms.Cursors.SizeNS;
-            this.addNewMagBtn.Location = new System.Drawing.Point(767, 37);
-            this.addNewMagBtn.Name = "addNewMagBtn";
-            this.addNewMagBtn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.addNewMagBtn.Size = new System.Drawing.Size(114, 48);
-            this.addNewMagBtn.TabIndex = 11;
-            this.addNewMagBtn.Text = "Add new";
-            this.addNewMagBtn.UseVisualStyleBackColor = true;
-            this.addNewMagBtn.Click += new System.EventHandler(this.addNewMagBtn_Click);
-            // 
-            // infoToolStripMenuItem
-            // 
-            this.infoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("infoToolStripMenuItem.Image")));
-            this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
-            this.infoToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
-            this.infoToolStripMenuItem.Text = "Info";
-            // 
             // document_list
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -477,6 +477,7 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "document_list";
             this.Text = "document_list";

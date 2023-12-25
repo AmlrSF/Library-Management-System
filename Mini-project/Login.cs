@@ -36,7 +36,7 @@ namespace Mini_project
             }
 
             string checkUsername = user.Text;
-            string checkPassword = Password.Text;
+            string checkPassword = Pass.Text;
 
             if (string.IsNullOrEmpty(checkUsername) || string.IsNullOrEmpty(checkPassword))
             {
@@ -45,20 +45,24 @@ namespace Mini_project
             }
             else if (checkPassword == "admin")
             {
+                Program.Username = checkUsername;
+
                 dashboard dash = new dashboard();
                 dash.Show();
                 this.Hide();
             }
             else if (checkPassword == "user")
             {
-                // Handle user login
-            }
+                Program.Username = checkUsername;
+                UserUi user = new UserUi();
+                user.Show();
+                this.Hide();            }
             else
             {
                 MessageBox.Show("Incorrect username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 user.Focus();
                 user.Text = "";
-                Password.Text = "";
+                Pass.Text = "";
             }
         }
     }

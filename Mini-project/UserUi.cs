@@ -44,5 +44,29 @@ namespace Mini_project
             bk.Show();
             this.Hide();
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logoutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Login lg = new Login();
+            lg.Show();
+            this.Hide();
+        }
+
+        private void book_Click(object sender, EventArgs e)
+        {
+            bookshelf sh = new bookshelf();
+            sh.Show();
+            this.Hide();
+        }
+
+        private void UserUi_Load(object sender, EventArgs e)
+        {
+            Welcome.Text = Program.Username + ".";
+        }
     }
 }

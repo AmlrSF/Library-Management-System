@@ -44,10 +44,10 @@
             // Favs
             // 
             this.Favs.AutoSize = true;
-            this.Favs.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Favs.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Favs.Location = new System.Drawing.Point(12, 42);
             this.Favs.Name = "Favs";
-            this.Favs.Size = new System.Drawing.Size(108, 29);
+            this.Favs.Size = new System.Drawing.Size(155, 39);
             this.Favs.TabIndex = 5;
             this.Favs.Text = "Facture ";
             // 
@@ -72,18 +72,18 @@
             // 
             // flowPanelFacture
             // 
-            this.flowPanelFacture.Location = new System.Drawing.Point(17, 75);
+            this.flowPanelFacture.Location = new System.Drawing.Point(17, 84);
             this.flowPanelFacture.Name = "flowPanelFacture";
-            this.flowPanelFacture.Size = new System.Drawing.Size(313, 302);
+            this.flowPanelFacture.Size = new System.Drawing.Size(312, 354);
             this.flowPanelFacture.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(346, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 32);
+            this.label2.Size = new System.Drawing.Size(68, 27);
             this.label2.TabIndex = 7;
             this.label2.Text = "Total :";
             // 
@@ -91,7 +91,7 @@
             // 
             this.Total.AutoSize = true;
             this.Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total.Location = new System.Drawing.Point(583, 75);
+            this.Total.Location = new System.Drawing.Point(464, 75);
             this.Total.Name = "Total";
             this.Total.Size = new System.Drawing.Size(31, 32);
             this.Total.TabIndex = 8;
@@ -101,7 +101,7 @@
             // 
             this.Amount.AutoSize = true;
             this.Amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Amount.Location = new System.Drawing.Point(583, 136);
+            this.Amount.Location = new System.Drawing.Point(464, 107);
             this.Amount.Name = "Amount";
             this.Amount.Size = new System.Drawing.Size(31, 32);
             this.Amount.TabIndex = 10;
@@ -110,17 +110,17 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(346, 136);
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(346, 107);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(243, 32);
+            this.label4.Size = new System.Drawing.Size(92, 27);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Amount of book :";
+            this.label4.Text = "books :";
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(352, 194);
+            this.button1.Location = new System.Drawing.Point(351, 137);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 48);
             this.button1.TabIndex = 11;
@@ -140,6 +140,7 @@
             this.Controls.Add(this.flowPanelFacture);
             this.Controls.Add(this.Favs);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Facture";
             this.Text = "Facture";
             this.Load += new System.EventHandler(this.Facture_Load);

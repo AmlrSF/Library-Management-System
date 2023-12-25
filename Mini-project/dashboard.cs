@@ -66,5 +66,31 @@ namespace Mini_project
             login.Show();
             this.Hide();
         }
+
+        private void dashboard_Load(object sender, EventArgs e)
+        {
+            Welcome.Text =  Program.Username + ".";
+        }
+
+        private void logoutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
+
+        private void book_Click(object sender, EventArgs e)
+        {
+            book_insertion book_Insertion = new book_insertion();
+            book_Insertion.Show();
+            this.Hide();
+        }
+
+        private void magazine_Click(object sender, EventArgs e)
+        {
+            magazaine_insertion magazine_insertion = new magazaine_insertion();
+            magazine_insertion.Show();
+            this.Hide();
+        }
     }
 }

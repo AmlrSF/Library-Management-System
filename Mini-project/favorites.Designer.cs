@@ -43,7 +43,7 @@
             this.backToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(832, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(832, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -51,7 +51,7 @@
             // 
             this.backToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("backToolStripMenuItem.Image")));
             this.backToolStripMenuItem.Name = "backToolStripMenuItem";
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(74, 26);
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.backToolStripMenuItem.Text = "Back";
             this.backToolStripMenuItem.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
             // 
@@ -65,10 +65,10 @@
             // Favs
             // 
             this.Favs.AutoSize = true;
-            this.Favs.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Favs.Font = new System.Drawing.Font("Arial Rounded MT Bold", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Favs.Location = new System.Drawing.Point(13, 54);
             this.Favs.Name = "Favs";
-            this.Favs.Size = new System.Drawing.Size(219, 29);
+            this.Favs.Size = new System.Drawing.Size(341, 43);
             this.Favs.TabIndex = 3;
             this.Favs.Text = "All favorites Items";
             // 
@@ -80,6 +80,7 @@
             this.Controls.Add(this.Favs);
             this.Controls.Add(this.flowPanelFavs);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "favorites";
             this.Text = "favorites";
             this.Load += new System.EventHandler(this.favorites_Load);

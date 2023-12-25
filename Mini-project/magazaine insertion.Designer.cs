@@ -223,6 +223,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.magazineTitle);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "magazaine_insertion";
             this.Text = "magazaine_insertion";
             ((System.ComponentModel.ISupportInitialize)(this.MagazineImage)).EndInit();
