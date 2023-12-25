@@ -24,15 +24,12 @@ namespace Mini_project
             if(progressBar.Width > 594)
             {
                 timer1.Stop();
-                dashboard dboard = new dashboard();
-                dboard.Show();
+                Login login = new Login();
+                login.Show();
                 this.Hide();
             }
         }
 
-        private void splach_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
