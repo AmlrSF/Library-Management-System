@@ -98,5 +98,26 @@ namespace Mini_project
             Amount.Text = i.ToString()+" Docs";
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            StringBuilder factureContent = new StringBuilder();
+            factureContent.AppendLine("Facture Details:");
+
+            foreach (var item in items)
+            {
+                if (item.IsBought)
+                {
+                    factureContent.AppendLine($"Title: {item.Title}");
+                    factureContent.AppendLine($"Price: {item.Price.ToString("C")}");
+                    factureContent.AppendLine("----------------------");
+                }
+            }
+
+            factureContent.AppendLine($"Total: {CalculateCartTotal().ToString("C")}");
+
+            // Show the facture in a MessageBox
+            MessageBox.Show(factureContent.ToString(), "Facture Details",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
