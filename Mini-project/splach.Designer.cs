@@ -43,11 +43,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(-4, 200);
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(-4, 232);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 20);
+            this.label1.Size = new System.Drawing.Size(107, 23);
             this.label1.TabIndex = 3;
             this.label1.Text = "Loading...";
             // 
@@ -62,15 +62,15 @@
             this.progressBar.BackColor = System.Drawing.Color.Lime;
             this.progressBar.Location = new System.Drawing.Point(0, 0);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(15, 23);
+            this.progressBar.Size = new System.Drawing.Size(21, 28);
             this.progressBar.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.progressBar);
-            this.panel2.Location = new System.Drawing.Point(0, 223);
+            this.panel2.Location = new System.Drawing.Point(0, 258);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(596, 13);
+            this.panel2.Size = new System.Drawing.Size(676, 28);
             this.panel2.TabIndex = 1;
             // 
             // pictureBox1
@@ -78,9 +78,9 @@
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(189, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(226, -9);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(193, 166);
+            this.pictureBox1.Size = new System.Drawing.Size(228, 202);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -88,10 +88,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(113, 150);
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(60, 168);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(356, 28);
+            this.label2.Size = new System.Drawing.Size(553, 46);
             this.label2.TabIndex = 5;
             this.label2.Text = "Library Managment System";
             // 
@@ -100,7 +100,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(113)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(594, 238);
+            this.ClientSize = new System.Drawing.Size(674, 285);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
