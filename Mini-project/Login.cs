@@ -43,7 +43,7 @@ namespace Mini_project
                 MessageBox.Show("You must enter both username and password to log in.", "Incomplete Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 user.Focus();
             }
-            else if (checkPassword == "admin")
+            else if (checkPassword == "Admin")
             {
                 Program.Username = checkUsername;
 
@@ -51,7 +51,7 @@ namespace Mini_project
                 dash.Show();
                 this.Hide();
             }
-            else if (checkPassword == "user")
+            else if (checkPassword == "User")
             {
                 Program.Username = checkUsername;
                 UserUi user = new UserUi();
